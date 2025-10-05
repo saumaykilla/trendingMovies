@@ -7,15 +7,15 @@ Although the requirement mentioned React, Next.js was chosen because it is built
 
 ### Frontend
 
-* ** Framework:
+* **Framework:**
 
 Used Next.js (React-based) for routing, rendering, and component management. It allows clean integration with API routes and supports both server and client components.
 
-*  ** UI Library:
+*  **UI Library:**
 
 Implemented shadcn/ui, built on Radix UI and Tailwind CSS, for consistent styling and accessibility.
 
-* ** Favorites:
+* **Favorites:**
 
 Used local storage to persist the favorite movies list across sessions without needing a backend database.
 
@@ -23,15 +23,15 @@ Used local storage to persist the favorite movies list across sessions without n
 
 ### Backend
 
-* ** Framework:
+* **Framework:**
 
 Built with Node.js (Express) to expose REST APIs that interact with the TMDB API.
 
-* ** Caching:
+* **Caching:**
 
 Added a simple in-memory cache for trending movies to avoid repetitive TMDB requests. The cache refreshes every 1 hour (configurable). In a production or high-traffic application, this would be replaced with a distributed cache like Amazon ElastiCache (Redis) or a similar caching layer for better scalability, reliability, and performance.
 
-* ** Environment Variables:
+* **Environment Variables:**
 
 Sensitive credentials like the TMDB API key are stored securely in .env files.
 
@@ -46,8 +46,8 @@ Sensitive credentials like the TMDB API key are stored securely in .env files.
 | Favorites Storage  | Local Storage                 | Lightweight and simple client persistence     | Database (MongoDB/PostgreSQL)        |
 
 
-### Summary
+### **Summary**
 
-* Performance: SSR and caching improve rendering speed and API efficiency.
-* Scalability: Architecture easily extends with Redis or cloud caching.
-* User Experience: Clean UI, persistent favorites, and smooth navigation.
+* **Performance:** SSR and caching improve rendering speed and API efficiency.
+* **Scalability:** Architecture easily extends with Redis or cloud caching.
+* **User Experience:** Clean UI, persistent favorites, and smooth navigation.
