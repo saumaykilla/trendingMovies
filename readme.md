@@ -8,8 +8,8 @@ This project consists of a **frontend (Next.js)** and a **backend (Express)** th
 
 ### 1. Clone the repository
 ```bash
-git clone git@github.com:saumaykilla/trendingMovies.git
-cd trendingMovie
+    git clone git@github.com:saumaykilla/trendingMovies.git
+    cd trendingMovie
 ```
 
 ## ⚙️ Environment Setup
@@ -40,7 +40,7 @@ Update the URL if your backend is running on a different port.
 If you’re using Yarn as your package manager, simply run:
 
 ```bash
-        chmod +x run.sh && ./run.sh
+    chmod +x run.sh && ./run.sh
 ```
 
 This script will:
