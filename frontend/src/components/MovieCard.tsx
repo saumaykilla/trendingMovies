@@ -42,9 +42,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       <div className="relative w-full md:w-1/3 h-56 md:h-auto">
         <Image
           src={
-            movie?.poster_path
-              ? `https://image.tmdb.org/t/p/w342${movie.poster_path}`
-              : "/fallback.png"
+          `https://image.tmdb.org/t/p/w342${movie.poster_path}`
           }
           alt={movie?.title}
           fill

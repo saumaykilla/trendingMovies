@@ -8,7 +8,7 @@ export default async function Home() {
   if (!res.ok) throw new Error("Failed to fetch");
   const data = await res.json();
   return (
-    <div className="bg-background pt-14 flex flex-col">
+    <div className="bg-background flex flex-col">
       <TrendingMovieClient data={data.results} FetchedTotalPages={data.total_pages}/>
     </div>
   );

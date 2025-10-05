@@ -11,7 +11,7 @@ export default function Home() {
   
 
   return (
-    <div className="bg-background pt-14 flex flex-col">
+    <div className="bg-background  flex flex-col">
       <main className="container  mx-auto px-4 py-8 flex-1">
         <div className="flex items-center justify-between gap-2 mb-6">
           <h1 className="text-2xl lg:text-4xl font-bold">My Favorite Movies</h1>

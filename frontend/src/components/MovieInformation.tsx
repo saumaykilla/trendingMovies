@@ -59,7 +59,6 @@ const MovieInformation: React.FC<MovieInformationProps> = ({ movie }) => {
                   {[1, 2, 3, 4, 5].map((i) => {
                     const rating = movie.vote_average / 2; // 0-5
                     let fill = 0;
-                    console.log(rating, i)
                     if (rating >= i) fill = 100; // full star
                     else if(rating >= i - 0.25) fill = 75; // 3/4 star
                     else if (rating >= i - 0.5) fill = 50; // half star
