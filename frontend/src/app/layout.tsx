@@ -24,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased`}
+        className={`${geistSans.variable} antialiased h-screen flex flex-col`}
       >
         <Navbar />
         <FavoritesProvider>
-        {children}
+        <main className="flex-1 overflow-auto">
+            {children}
+          </main>
         <Toaster />
         </FavoritesProvider>
       </body>

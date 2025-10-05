@@ -33,7 +33,7 @@ export const FavoritesProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   }
 
   return (
-    <FavoritesContext.Provider value={{ favorites, toggleFavorite }}>
+    <FavoritesContext.Provider  value={{ favorites, toggleFavorite }}>
       {children}
     </FavoritesContext.Provider>
   )

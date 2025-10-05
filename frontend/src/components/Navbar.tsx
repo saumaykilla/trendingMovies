@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="border-b bg-background backdrop-blur-sm sticky top-0 z-40">
+    <header className="border-b bg-transparent backdrop-blur-sm absolute w-full top-0 z-40">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           {/* App Name */}
