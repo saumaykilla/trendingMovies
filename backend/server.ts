@@ -2,8 +2,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-const trendingRouter = require('./routes/trending');
-const movieRouter = require('./routes/movie');
+import trendingRouter from './routes/trending';
+import movieRouter from './routes/movie';
 
 dotenv.config();
 

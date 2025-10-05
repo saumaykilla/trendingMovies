@@ -5,4 +5,4 @@ const router = Router();
 
 router.get('/:id', movieByIdService);
 
-module.exports = router;
+export default router;
