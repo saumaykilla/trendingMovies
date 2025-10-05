@@ -29,5 +29,8 @@ const cache: CacheStore = { day: {}, week: {} };
     return entry.data;
   }
 
-  module.exports = { setCache, getCache };
-  
+  // For testing purposes only
+export function clearCache(): void {
+  cache.day = {};
+  cache.week = {};
+}
