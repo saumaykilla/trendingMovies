@@ -4,7 +4,7 @@ import { Request, Response } from "express";
  export const trendingMovieService = async (req: Request, res: Response) => {
     const { time_window } = req.params;
     const { page } = req.query;
-    const { api_key } = process.env;
+    const { api_key, TMDB_BASE_URL } = process.env;
   
     if (!time_window || !["day", "week"].includes(time_window)) {
       return res.status(400).json({
@@ -28,7 +28,7 @@ import { Request, Response } from "express";
     }
   
     try {
-      const url = `https://api.themoviedb.org/3/trending/movie/${time_window}?page=${pageNumber}`;
+      const url = `${TMDB_BASE_URL}/trending/movie/${time_window}?page=${pageNumber}`;
       const options = {
         method: 'GET',
         headers: {

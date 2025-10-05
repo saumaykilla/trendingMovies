@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 
 export const movieByIdService = async(req: Request, res: Response) => {
     const { id } = req.params;
-    const { api_key } = process.env;
+    const { api_key, TMDB_BASE_URL } = process.env;
     if (!id){
         return res.status(400).json({ message: 'Movie ID is required' });
     }
@@ -10,7 +10,7 @@ export const movieByIdService = async(req: Request, res: Response) => {
         return res.status(500).json({ message: 'API key is required' });
     }
     try {
-        const url = `https://api.themoviedb.org/3/movie/${id}`;
+        const url = `${TMDB_BASE_URL}/movie/${id}`;
         const options = {
             method: 'GET',
             headers: {
