@@ -8,7 +8,7 @@ This project consists of a **frontend (Next.js)** and a **backend (Express)** th
 
 ### 1. Clone the repository
 ```bash
-git clone 
+git clone git@github.com:saumaykilla/trendingMovies.git
 cd trendingMovie
 ```
 
